@@ -3,7 +3,7 @@ let wheel = document.querySelectorAll('.wheels');
 
 function rotate(list, times) {
     while (times--) {
-        var temp = list.shift();
+        let temp = list.shift();
         list.push(temp)
     }
     wheel[0].innerHTML = list[0];
